@@ -1,0 +1,215 @@
+<html>
+<head >
+<script>
+function myFunction() {
+    alert("Thank you for visiting W3Schools!");
+}
+</script>
+</head>
+<body onunload="myfunction()" >
+<style>
+#t1{border:8px solid purple}
+#b1:hover
+{
+background-color:yellow;
+}
+#sp1{border:8px solid purple;}
+#b1
+{
+width:auto;
+border:3px solid gray;
+font:bold;
+font-size:30;
+color:red;
+background-color:aqua;
+}
+#d1
+{
+border:solid red 20px;
+}
+</style>
+<script>
+
+function cost()
+{
+var myfrm=document.frm;
+var ss=myfrm.tt;
+var du=myfrm.du;
+if(ss.value==1 && du.value==1)
+{
+var myp=document.createElement("p");
+var myt=document.createTextNode("cost is 250");
+myp.appendChild(myt);
+var myd=document.getElementById("d2");
+myd.appendChild(myp);
+}
+else if(ss.value==1 && du.value==2)
+{
+var myp=document.createElement("p");
+var myt=document.createTextNode("cost is 500");
+myp.appendChild(myt);
+var myd=document.getElementById("d2");
+myd.appendChild(myp);
+}
+else if(ss.value==1 && du.value==3)
+{
+var myp=document.createElement("p");
+var myt=document.createTextNode("cost is 750");
+myp.appendChild(myt);
+var myd=document.getElementById("d2");
+myd.appendChild(myp);
+}
+else if(ss.value==2 && du.value==1)
+{
+var myp=document.createElement("p");
+var myt=document.createTextNode("cost is 500");
+myp.appendChild(myt);
+var myd=document.getElementById("d2");
+myd.appendChild(myp);
+}
+else if(ss.value==2 && du.value==2)
+{
+var myp=document.createElement("p");
+var myt=document.createTextNode("cost is 1000");
+myp.appendChild(myt);
+var myd=document.getElementById("d2");
+myd.appendChild(myp);
+}
+else if(ss.value==2 && du.value==3)
+{
+var myp=document.createElement("p");
+var myt=document.createTextNode("cost is 1500");
+myp.appendChild(myt);
+var myd=document.getElementById("d2");
+myd.appendChild(myp);
+}
+else{}
+}
+function vali()
+{
+var myfrm=document.frm;
+var x=myfrm.name;
+var x1=myfrm.lname;
+var y=myfrm.age;
+var a=myfrm.ss;
+var b=myfrm.ds;
+var cc=myfrm.id;
+var aa=myfrm.address;
+var ctn=myfrm.ctn;
+var gender=myfrm.gender;
+var img=myfrm.img;
+if(a.value==b.value){alert("cannot have same destination");return false}
+else if(x.value=="")
+{
+alert("cannot be empty");return false;
+}
+else if(x1.value=="")
+{
+alert("cannot be empty");return false;
+}
+else if(img.value=="")
+{
+alert("cannot be empty");return false;
+}
+else if(gender.value=="")
+{
+alert("cannot be empty");return false;
+}
+else if(ctn.value=="")
+{
+alert("cannot be empty");return false;
+}
+else if(aa.value=="")
+{
+alert("cannot be empty");return false;
+}
+else if(cc.value==""){
+alert("cannot be empty");return false;}
+else if(y.value=="")
+{
+alert("cannot be empty");return false;
+}else{}
+if(x.value==""&&y.value==""){alert("cannot be empty");return false }
+return true;
+}
+</script><font size="15">
+<b><div id="d1" style="background-color:blue;"><br/><br/>
+<span id="sp1">
+<font color="yellow" size="30"><i><b>MST FORM(Monthly Seasonal Ticket)</b></i></font><br/><br/>
+
+</b></font></span>
+<table id="t1" width="100%" height="30%" border="10" bgcolor="aqua">
+
+
+
+<tr><marquee bgcolor="red"><font size="10" color="white"><b>welcome to indian railway</b></font></marquee></tr>
+<form id="f1" action="http://localhost/connect.php" name="frm" method="POST" enctype="multipart/form-data" >
+<tr>
+<td><font color="brown" size="6"><b>ENTER YOUR FIRST NAME</b></font></td><td><input type="text" name="name"></td>
+<td><font color="brown" size="6"><b>LAST NAME</b></td><td><input type="text" name="lname"><br/></td>
+</tr>
+<tr><td><font color="brown" size="6"><b>AGE</b></font></td><td><input type="text" name="age"></td></tr>
+<tr><td><font size="6" color="brown"><b>GENDER</b></font></td><td><font size="6"><b>MALE</b></font><input type="radio" name="gender" value="MALE"></td>
+<td><font size="6"><b>FEMALE </b></font><input type="radio" name="gender" value="FEMALE"></td></tr>
+<tr><td><font color="brown" size="6"><b>ADDRESS</b></font></td><td><input type="text" name="address"><br/></td></tr>
+<tr><td><font color="brown" size="6"><b>CONTACT NUMBER</b></font></td><td><input type="text" name="ctn"><br/></td></tr>
+<tr><td><font color="brown" size="6"><b>PERMANENT ID</b></font>(voter,driving,aadhar)</td><td><input type="text" name="id"></td></tr>
+<tr><td><font color="brown" size="6"><b>IMAGE</b></font></td><td><input type="FILE" name="image" ></td></tr>
+<tr><td><font color="brown" size="6"><b>PROFESSION</b></font></td><td>
+<select name="pro">
+<option value="Student">Student</option>
+<option value="Teacher">Teacher</option>
+<option value="Docter">Docter</option>
+
+<option value="Other">Other</option>
+
+</select><br/></td></tr>
+<tr><td>
+<font size="6" color="brown"><b> Source station</b></font></td><td>
+<select name="ss">
+
+<option value="Habibganj">Habibganj</option>
+<option value="Bhopal">Bhopal</option>
+<option value="Vidisha">Vidisha</option>
+<option value="Bina">Bina</option>
+
+</select><br/><br/></td></tr>
+<tr><td>
+<font color="brown" size="6"><b>Destination  station</b></font></td><td>
+<select name="ds">
+
+<option value="Habibganj">Habibganj</option>
+<option value="Bhopal">Bhopal</option>
+<option value="Vidisha">Vidisha</option>
+<option value="Bina">Bina</option>
+
+</select></td></tr>
+<br/><br/><tr><td>
+<font color="brown" size="6"><b>Train type</b></font></td><td>
+<select name="tt">
+<option value="1">Express</option>
+<option value="2">Super fast</option>
+</select><br/><br/></td></tr><tr><td>
+<font color="brown" size="6"><b>Duration in months:</b></font></td><td>
+<select name="du">
+<option value="1">1 month</option>
+<option value="2">2 month</option>
+<option value="3">3 month</option>
+</select><br/><br/></td></tr>
+<tr><td><font color="brown" size="6"><b>DATE </b></font></td><td><input type="date" name="date"></td></tr>
+
+<tr><td><font color="brown" size="6"><b>Message sending EMAIL</b></font></td><td><input type="text" name="mail"></td></tr>
+</table>
+<input id="b1" type="button" onClick=cost() value="cost">
+<input id="b1" type="submit" onClick=return(vali())>
+</form>
+<font size="10" color="yellow">
+<b>
+<div id="d2" style="color:white">
+<table bgcolor="blue" width="100%" height="3%"><tr><tr/></table>
+<marquee bgcolor="red">updates will be available soon</marquee>
+<p align="center"><br/></p>
+<style>#lim:hover{color: red;}</style>
+</div></b></font></div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+            SLIDE 1
+WHAT IS HADOOP?
+1 Hadoop is an Apache open source framework written in java that allows distributed processing of large datasets across clusters of computers using simple programming models
+2 Hadoop is designed to scale up from single server to thousands of machines, each offering local computation and storage.
+            slide 2
+HADOOP ARCHITECTURE?
+At its core, Hadoop has two major layers namely:
+(a) Processing/Computation layer (MapReduce), and
+(b) Storage layer (Hadoop Distributed File System)
+              slide3
+MAPREDUCE?
+1 MapReduce is a parallel programming model for writing distributed applications devised at Google for efficient processing of large amounts of data
+2 The MapReduce program runs on Hadoop which is an Apache open-source framework
+              SLIDE 4
+1 HDFS holds very large amount of data and provides easier access. To store such huge data, the files are stored across multiple machines.
+2 HDFS also makes applications available to parallel processing.
+                SLIDE 5
+Hadoop runs code across a cluster of computers. This process includes the following core tasks that Hadoop performs:
+? Data is initially divided into directories and files. Files are divided into uniform sized blocks of 128M and 64M (preferably 128M).
+? These files are then distributed across various cluster nodes for further processing.
+? HDFS, being on top of the local file system, supervises the processing.
+? Blocks are replicated for handling hardware failure.
+               SLIDE 6
+? Checking that the code was executed successfully 
+? Performing the sort that takes place between the map and reduce stages.
+? Sending the sorted data to a certain computer.
+? Writing the debugging logs for each job.
+              SLIDE 7
+? Hadoop framework allows the user to quickly write and test distributed systems. It is efficient, and it automatic distributes the data and work across the machines and in turn, utilizes the underlying parallelism of the CPU cores
+? Servers can be added or removed from the cluster dynamically and Hadoop continues to operate without interruption.
+             SLIDE 8
+? Hadoop does not rely on hardware to provide fault-tolerance and high availability (FTHA), rather Hadoop library itself has been designed to detect and handle failures at the application layer
+? Another big advantage of Hadoop is that apart from being open source, it is compatible on all the platforms since it is Java based.
+
